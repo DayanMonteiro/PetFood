@@ -1,6 +1,7 @@
 
 import './style.css';
-import Header from "../../components/header"
+import Header from '../../components/header';
+import Product from '../../components/product/list';
 
 
 const Checkout = () => {
@@ -106,10 +107,14 @@ const Checkout = () => {
                     </div>
 
                     <div className="col-6">
-                        <div className="box col mb-4">
-                            <h4>Minha Sacola(5)</h4>
+                        <div className="box col mb-4 box-sidebar">
+                            <h4>Minha Sacola(4)</h4>
 
-                            <div className="row products" ></div>
+                            <div className="row products">
+                               {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((p) => (
+                                   <Product />
+                               ))} 
+                            </div>
 
                         </div>
                     </div>
