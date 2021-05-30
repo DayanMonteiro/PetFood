@@ -2,8 +2,8 @@
 
 
 :root {
-    --primary: #06D6A0;
-    --secondary: #FA643D;
+  --primary: 6, 214, 160;
+  --secondary: 250, 100, 61;
 }
 
 
@@ -41,7 +41,7 @@ input[type='date']:disabled {
 }
 
 .bg-primary {
-    background-color: var(--primary) !important;
+    background-color: rgb(var(--primary)) !important;
 }
 
 
@@ -50,12 +50,12 @@ input[type='date']:disabled {
 .btn-primary:active,
 .btn-primary:disabled,
 .btn-primary:hover {
-  background-color: var(--primary) !important;
-  border-color: var(--primary);
+  background-color: rgb(var(--primary)) !important;
+  border-color: rgb(var(--primary));
 }
 
 .bg-secondary {
-    background-color: var(--secondary) !important;
+    background-color: rgb(var(--secondary)) !important;
 }
 
 .btn-secondary,
@@ -63,9 +63,24 @@ input[type='date']:disabled {
 .btn-secondary:active,
 .btn-secondary:disabled,
 .btn-secondary:hover {
-  background-color: var(--secondary) !important;
-  border-color: var(--secondary);
+  background-color: rgb(var(--secondary)) !important;
+  border-color: rgb(var(--secondary));
 }
+
+.badge {
+  font-weight: lighter;
+}
+
+.badge.badge-primary {
+  background: rgba(var(--primary), 0.1);
+  color: rgb(var(--primary));
+}
+
+.badge.badge-secondary {
+  background: rgba(var(--secondary), 0.1);
+  color: rgb(var(--secondary));
+}
+
 
 .box {
     background: #fff;

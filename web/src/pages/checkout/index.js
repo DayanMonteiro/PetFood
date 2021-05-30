@@ -1,5 +1,5 @@
 
-import './style.css';
+import './styles.css';
 import Header from '../../components/header';
 import Product from '../../components/product/list';
 
