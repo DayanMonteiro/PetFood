@@ -44,6 +44,16 @@ input[type='date']:disabled {
     background-color: var(--primary) !important;
 }
 
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:disabled,
+.btn-primary:hover {
+  background-color: var(--primary) !important;
+  border-color: var(--primary);
+}
+
 .bg-secondary {
     background-color: var(--secondary) !important;
 }
