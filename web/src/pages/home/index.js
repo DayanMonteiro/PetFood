@@ -1,6 +1,7 @@
 import './styles.css';
 import Header from '../../components/header';
 import Petshop from '../../components/petshop';
+import Map from '../../components/map';
 
 const Home = () => {
 
@@ -17,6 +18,7 @@ const Home = () => {
                     </ul>
                 </div>
             </div>
+        <Map />
         </div>
     );
 }
