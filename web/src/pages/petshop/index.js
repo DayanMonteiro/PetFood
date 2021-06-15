@@ -1,5 +1,6 @@
-import Header from '../../components/header';
 import './styles.css';
+import Header from '../../components/header';
+import Product from '../../components/product/card';
 
 const Petshop = () => {
     return (
@@ -22,7 +23,15 @@ const Petshop = () => {
                             <label className="badge badge-primary">Frete Grátis</label>
                         </div>
                     </div>
-                    <div className="col-10"></div>
+                    <div className="col-10">
+                        <h5>Produtos</h5>
+                        <br />
+                        <div>
+                            <div className="row">
+                              {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((p) => ( <Product /> ))};
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
